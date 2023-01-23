@@ -1,0 +1,556 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#header{
+    background-color: #f82;
+}
+#header h1{
+    font-size: 1.2em;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#login{
+     margin-top: 70px;
+}
+#mainmenu header{
+    overflow: auto;
+}
+#mainmenu li a{
+    overflow: auto;
+    display: block;
+    padding: 25px 20px;
+    margin: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-left: 1px solid #fff;
+    background: #f82;
+}
+#mainmenu li input{
+    overflow: auto;
+    width: 95%;
+    display: block;
+    padding: 25px 20px;
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    border-left: 1px solid #fff;
+    background: #f82;
+}
+#mainmenu li a:hover{
+    background-color: #5894d7;
+}
+#mainmenu li input:hover{
+    background-color: #5894d7;
+}
+header{
+    
+    margin: 0 auto;
+
+}
+header h1{
+    font-size: 1.2em;
+    float: left;
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+header #user{
+    font-size: 0.9em;
+    float: right;
+    width:200px;
+    padding-top: 20px;
+}
+header #logout{
+    float: right;
+    width:100px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+nav{
+    width: 100%;
+    float: none;
+    overflow: hidden;
+    /*padding-right: 20px;*/
+}
+nav ul{
+    margin: 0 auto;
+}
+nav li{
+    width: 14.28%;
+    float: left;
+    font-weight: bold;
+}
+nav li a{
+    display: block;
+    padding: 5px 20px;
+    color: #fff;
+    text-align: center;
+    border-left: 1px solid #fff;
+    background: #f82;
+}
+nav li a:hover{
+    background-color: #5894d7;
+}
+#shiftAll .globalNavi li:nth-child(2) a{
+    background-color: #fff;
+    color: #000;
+}
+#shiftAll .globalNavi li:nth-child(2) a:hover{
+    background-color: #eee;
+}
+#shift_edit .globalNavi li:nth-child(3) a{
+    background-color: #fff;
+    color: #000;
+}
+#shift_edit .globalNavi li:nth-child(3) a:hover{
+    background-color: #eee;
+}
+
+#shift_registform .globalNavi li:nth-child(4) a{
+    background-color: #fff;
+    color: #000;
+}
+#shift_registform .globalNavi li:nth-child(4) a:hover{
+    background-color: #eee;
+}
+
+#staff_all .globalNavi li:nth-child(5) a{
+    background-color: #fff;
+    color: #000;
+}
+#staff_all .globalNavi li:nth-child(5) a:hover{
+    background-color: #eee;
+}
+
+#staff_registform .globalNavi li:nth-child(6) a{
+    background-color: #fff;
+    color: #000;
+}
+#staff_registform .globalNavi li:nth-child(6) a:hover{
+    background-color: #eee;
+}
+#user_config .globalNavi li:nth-child(7) a{
+    background-color: #fff;
+    color: #000;
+}
+#user_config .globalNavi li:nth-child(7) a:hover{
+    background-color: #eee;
+}
+main{
+    padding: 40px;
+    float: none;
+}
+
+table tr td{
+    text-align: center;
+}
+#form table{
+    width: 600px;
+}
+#form tr{
+    height: 60px;
+}
+#form .non_col{
+    width: 50%;
+}
+#staff_updateform table{
+    width: 400px;
+}
+#staff_updateform .non_col{
+    width: 30%;
+}
+#staff_updateform tr{
+    height: 60px;
+}
+#id_err, #name_err, #name_y_err, #date_err, #start_err, #end_err, #pass_err, #pass2_err, #new_pass_err, #new_pass2_err, #s_e, #messageb, #passcheck_err, #position_err, #err1{
+    color: #F00;
+    font-size: 0.9em;
+}
+/*検索*/
+#search{
+    float: left;
+}
+/*シフト提出状況*/
+.not_s{
+    background-color: #FDD;
+}
+#submission{
+    float: left;
+    position: relative;
+    margin-left: 50px;
+}
+#submission input{
+    width: 270px;
+}
+#submissionTable{
+    display: none;
+    border: 1px solid #555;
+    background-color: #FFF;
+    position: absolute;
+    height: 350px;
+    overflow-y: scroll;
+}
+#submissionTable table{
+    width: 250px;
+    
+}
+
+#shift_all{
+    clear: left;
+}
+.w{
+    color: #F00;
+    font-size: 1em;
+}
+.attention{
+    color: #F00;
+}
+/*スタッフ一覧*/
+
+#staffList table,
+#staffList table tr{
+    border: 2px solid #000;
+    border-collapse: collapse;
+}
+#staffList table tr th,
+#staffList table tr td{
+    border: 1px solid #888;
+    border-collapse: collapse;
+}
+
+#staffList table tr td{
+    padding: 3px 7.5px;
+}
+
+
+/*検索*/
+#search table select{
+    font-size: 1rem;
+}
+#search table tr td{
+    text-align: left;
+    padding-right: 8px;
+}
+#shift_all h2{
+    padding-top: 1rem;
+}
+/*シフト一覧用*/
+#shift{
+    float: left;
+    
+}
+#shiftTable{
+    margin-bottom: 50px;
+    margin-right: 30px;
+    
+}
+#shiftTable table,
+#shiftTable table tr{
+    border: 2px solid #000;
+    border-collapse: collapse;
+}
+#shiftTable table tr th,
+#shiftTable table tr td{
+    border: 1px solid #888;
+    border-collapse: collapse;
+}
+
+#shift table tr td{
+    padding: 2px 2.5px;
+}
+
+
+/*オリジナルシフト一覧*/
+.delete{
+    color: #777;
+}
+.delete td:last-child{
+    font-size: 0.8rem
+}
+.add{
+    color: #00A;
+}
+#original{
+    float: left;
+    width: auto;
+    margin-top: 30px;
+}
+#original table tr td{
+    padding: 2px 5px;
+}
+#original #originalTable{
+    display: none;
+    font-size: 0.9rem;
+}
+#original #originalTable table,
+#original #originalTable table tr{
+    border: 2px solid #000;
+    border-collapse: collapse;
+}
+#original #originalTable table tr th,
+#original #originalTable table tr td{
+    border: 1px solid #888;
+    border-collapse: collapse;
+}
+#tableSpan {
+    width: 200px;
+}
+/**/
+#staff h3{
+    text-align: center;
+}
+#staff #month_c{
+    width: 90%;
+    margin: 0 auto;
+}
+#staff #prev{
+    float: left;
+}
+#staff #next{
+    float: right;
+}
+#staff table {
+    width: 90%;
+    margin: 0 auto;
+    clear: both;
+}
+
+#staff table th {
+    background: #DDC;
+}
+#staff table th{
+    border: 1px solid #CCC;
+    height: 30px;
+    width: 14%;
+    padding: 5px;
+}
+#staff table td {
+    border: 1px solid #CCC;
+    height: 40px;
+    width: 14%;;
+    text-align: left;
+    vertical-align: top;
+    padding: 5px;
+}
+
+#staff table th:nth-of-type(1)
+{
+  background-color: #F88;  
+}
+#staff table td:nth-of-type(1)
+{
+  color: #F00;
+  background-color: #FEE;
+}
+#staff table th:nth-of-type(7)
+{
+  background-color: #88F;  
+}
+#staff table td:nth-of-type(7)
+{
+  color: #00F;
+    background-color: #EEF;
+}
+#staff table .delete form,#staff table .delete span{
+    text-align: right;
+    color: #000;
+}
+
+/*シフト調整*/
+#editSearch td{
+    padding-right: 35px;
+}
+#button{
+    width: 70px;
+}
+#colorTable td{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+#editTable table,#editTable table tr,
+#editTable table tr td,
+#editTable table tr td:first-child{
+    clear: left;
+    border: 2px solid #000;
+    border-collapse: collapse;
+}
+#editTable table tr td{
+    border: 1px solid #888;
+    border-collapse: collapse;
+}
+.holiday button{
+    height: 50px;
+    font-size: 1.0rem;
+    border: none;
+    color: #F00;
+    background-color: #FEE;
+}
+.holiday {
+    color: #F00;
+    background-color: #FEE;
+}
+.holidayFont{
+    color: #F00;
+}
+.saturday button{
+    height: 50px;
+    font-size: 1.0rem;
+    border: none;
+    color: #00F;
+    background-color: #EEF;
+}
+.saturday{
+    color: #00F;
+    background-color: #EEF;
+}
+.saturdayFont{
+    color: #00F;
+}
+.weekdays button{
+    /*width: 70px;*/
+    height: 50px;
+    font-size: 1.0rem;
+    border: none;
+    color: #000;
+    background-color: #FFF;
+}
+.weekdays{
+    color: #000;
+    background-color: #FFF;
+}
+#editTable #name{
+    width: 160px;
+}
+.time{
+    font-size: 0.9rem;
+}
+.off_hour{
+    background-color: #F88;
+    font-size: 0.9rem;
+}
+.unsent{
+    background-color: #F99;
+    font-size: 0.9rem;
+}
+.daysClosedN{
+    writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+}
+
+/*シフト調整　日*/
+#d table{
+    width: 100%;
+}
+#d table button{
+    border: none;
+    background-color: #FFF;
+    color: #00F;
+    font-size: 1rem;
+}
+.d{
+    width: 4%;
+}
+#m{
+    width: 92%;
+}
+.holiday_n{
+    color: #F00;
+}
+#shift_edit_d table{
+    width:100%;
+    clear: left;
+    border: 2px solid #000;
+    border-collapse: collapse;
+    padding: 0;
+}
+#shift_edit_d .border,
+.t{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0;
+}
+.t{
+    font-size: 0.8rem;
+}
+#shift_edit_d table tr{
+    height: 20px;
+}
+
+#shift_edit_d table input{
+    display: block;
+     margin: 0 5px 0 auto;
+}
+#n{
+    width: 150px;
+}
+#e_t{
+    width: 240px;
+}
+.e_t{
+    margin: 0 0 0 0;
+}
+.color_even{
+    background-color: #77F;
+    width: 20px;
+    height: 30px;
+    border-right: 1px dotted #BBB;
+    border-collapse: collapse;
+    padding: 0;
+}
+.color_odd{
+    background-color: #77F;
+    width: 20px;
+    height: 30px;
+    border-right: 1px solid #BBB;
+    border-collapse: collapse;
+    padding: 0;
+}
+.n_color_even{
+    width: 20px;
+    height: 30px;
+    border-right: 1px dotted #BBB;
+    border-collapse: collapse;
+    padding: 0;
+}
+.n_color_odd{
+    width: 20px;
+    height: 30px;
+    border-right: 1px solid #BBB;
+    border-collapse: collapse;
+    padding: 0;
+    
+}
+.even{
+    border-right: 1px dotted #BBB;
+    border-collapse: collapse;
+    padding: 0;
+}
+.odd{
+    border-right: 1px solid #BBB;
+    border-collapse: collapse;
+    padding: 0;
+    
+}
+.err{
+    color: #F00;
+}
+.gym{
+    background-color: #DDF;
+}
+.reception{
+    background-color: #FFC;
+}
